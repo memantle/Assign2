@@ -5,7 +5,8 @@
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <!-- <link href="{{asset('css/style.css')}}" type="text/css" rel="stylesheet"> -->
     <!-- <link href="{{asset('build/assets/app-Bn5upfEP.css')}}" type="text/css" rel="stylesheet"> -->
-    @vite(['resources/css/app.css'])
+    @viteReactRefresh
+    @vite(['resources/css/app.css','resources/js/app.jsx'])
   </head>
   <body class="bg-red-400">
     @auth
@@ -31,6 +32,9 @@
       </ul>
     </nav>
     <h1 class="text-3xl font-bold text-orange-600">Amazing Film App</h1>
+      <div id="react-content">
+      
+  </div>
     {{$slot}}
   </body>
 </html>
