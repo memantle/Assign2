@@ -30,4 +30,14 @@ class FilmController extends Controller
     {
         return "About the amazing film app";
     }
+    function show($id)
+    {
+        $film = Film::find($id);
+        return view('films.show', ['film' => $film]);
+    }
+    function edit($id)
+    {
+        $film = Film::find($id);
+        return view('films.edit', ['film' => $film]);
+    }
 }
