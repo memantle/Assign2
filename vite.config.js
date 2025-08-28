@@ -10,4 +10,15 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
+    server: {
+        cors:true,
+        hmr: {
+            cors:true,
+            host: "probable-potato-xv6vr76rxh6wj7-5173.app.github.dev",
+            clientPort: 443,
+            protocol:'wss',
+        },
+        
+    }
+
 });

@@ -3,9 +3,11 @@
   <head>
     <title>{{$title}}</title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <link href="{{asset('css/style.css')}}" type="text/css" rel="stylesheet" />
+    <!-- <link href="{{asset('css/style.css')}}" type="text/css" rel="stylesheet"> -->
+    <!-- <link href="{{asset('build/assets/app-Bn5upfEP.css')}}" type="text/css" rel="stylesheet"> -->
+    @vite(['resources/css/app.css'])
   </head>
-  <body>
+  <body class="bg-red-400">
     @auth
     <div>
         Logged in as {{Auth::user()->name}}
@@ -28,6 +30,7 @@
         @endguest
       </ul>
     </nav>
+    <h1 class="text-3xl font-bold text-orange-600">Amazing Film App</h1>
     {{$slot}}
   </body>
 </html>
