@@ -1,1 +1,1 @@
-# CHT2520 Assignment 1 - Firstname Lastname
+# CHT2520 Assignment 2 - Firstname Lastname
